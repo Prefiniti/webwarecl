@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_gms" value="name:id;datatype:,name:crewid;datatype:,name:dateTime;datatype:,name:clsJobNumber;datatype:,name:instructions;datatype:,name:dateTimeEnd;datatype:" />
+</info>

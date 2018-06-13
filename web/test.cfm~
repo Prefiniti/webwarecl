@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>popcal test</title>
+	<script src="popcal/popcal_config.js"></script>
+	<script src="popcal/popcal_lang.js"></script>
+	<script src="popcal/popcal.js"></script>
+</head>
+<body>
+	<form name="popcal">
+	<input type="text" name="date1" value="April 9, 2003">
+	<input type="button" value="..." onclick="popCal(date1)">
+	</form>
+</body>
+</html>

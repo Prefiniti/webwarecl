@@ -1,0 +1,32 @@
+PopCal Ver 1.0 - The C-o-o-lest Pop Up Calendar!
+
+PopCal is a cool and flexible Javascript PopUp Calendar. 
+It is very easy to use and is very user-friendly. It
+features automatic positioning, context-sensitive help,
+multi-language support and support for all date formats.
+The current version has only been tested with Internet
+Explorer 5.5.
+
+For more information refer to:
+  usage.html - Help document describing how to use PopCal
+  demo.html  - Samples of usage
+  http://jsutils.sourceforge.net/popcal/
+
+FEATURES --------------<
+Ver 1.0 (first release version)
+- Supports almost all types of date formats
+- Automatically and intelligently positions the popup
+  near to the date field
+- Most of the parameters can be specified using a config file
+- Supports multiple languages
+- All configuration parameters can be set for individual
+  calendars on the fly. See demo.html for examples
+- Has Today and Blank Date buttons
+- Navigate month-by-month or go directly to a month
+- Navigate year-by-year or go directly to a year
+- Status bar to display context-sensitive help
+- Has a built-in debugger (intended for developers)
+- Fully supports keyboard navigation
+
+
+

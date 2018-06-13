@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="viewTimeCard.cfm" local="128257603548750000" remote="128257605600000000" testing="0" />
+<file name="checkRem.cfm" local="128300074976360000" remote="128300077200000000" testing="0" />
+<file name="lineItemsByTC.cfm" local="128257424600312500" remote="128257426800000000" testing="0" />
+<file name="taskCode.cfm" local="128257409265468750" remote="128257411200000000" testing="0" />
+<file name="hoursByTS.cfm" local="128256204072500000" remote="128256205800000000" testing="0" />
+<file name="tcStatus.cfm" local="128257625251250000" remote="128257627200000000" testing="0" />
+<file name="tcHeader.cfm" local="128257435520781250" remote="128257437600000000" testing="0" />
+<file name="ts.css" local="128257405617187500" remote="128257407600000000" testing="0" />
+<file name="tcUser.cfm" local="128257434733125000" remote="128257436400000000" testing="0" />
+<file name="firstDayOfWeek.cfm" local="128257590889843750" remote="128257593000000000" testing="0" />
+<file name="lastDayOfWeek.cfm" local="128257596802343750" remote="128257599000000000" testing="0" />
+<file name="tcFooter.cfm" local="128257624422500000" remote="128257626600000000" testing="0" />
+<file name="mileageByTS.cfm" local="128257608105156250" remote="128257609800000000" testing="0" />
+<file name="approveTC.cfm" local="128257657223750000" remote="128257659000000000" testing="0" />
+<file name="reverseTC.cfm" local="128257657186562500" remote="128257659000000000" testing="0" />
+<file name="printView.cfm" local="128266708945625000" remote="128266710600000000" testing="128266710600000000" />
+<file name="taskCodeDesc.cfm" local="128266615065468750" remote="128266616400000000" testing="128266616400000000" />
+<file name="deleteTC.cfm" local="128266671560156250" remote="128266672800000000" testing="128266672800000000" />
+<file name="deleteTCSub.cfm" local="128266680160937500" remote="128266681800000000" testing="128266681800000000" />
+<file name="timesheetsByWeek.cfm" local="128306550136440000" remote="128306551800000000" testing="128306551800000000" />
+<file name="tsDay.cfm" local="128306559973870000" remote="128306562000000000" testing="128306562000000000" />
+</dwsync>

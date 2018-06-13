@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>PopCal Demo</title>
+<style>
+body { background-color:#666666; margin:20px; font-family:Verdana,Arial; }
+.page { border:2px solid black; background-color:white; margin:0px; padding:20px; }
+</style>
+<script src="js/popcal_config.js"></script>
+<script src="js/popcal_lang.js"></script> <!--If needed, include after popcal_config.js-->
+<script src="js/popcal.js"></script>
+</head>
+<body>
+<div class=page>
+<small>PopCal Ver 1.0 - The C-o-o-lest Pop Up Calendar!&nbsp;&nbsp;&nbsp;
+(http://jsutils.sourceforge.net/)</small>
+<hr>
+<h1>PopCal Sample</h1>
+<form name="frm1">
+With no arguments! popCal, figure it out yourself!
+<pre>popCal()</pre>
+<input type=text name=date0 value="April 9, 2003">
+<input type=button value="..." onclick="popCal()"><br>
+<i>If no arguments are specified the previous text box before
+the button is assumed to be the date input field.</i>
+<hr>
+Specifying date input field
+<pre>popCal(document.frm1.date1)</pre>
+<input type=text name=date1 value="April 9, 2003">
+<input type=button value="..." onclick="popCal(document.frm1.date1)"><br>
+<hr>
+Specifying non form element as input field
+<pre>Birthday: &lt;span id=bday1&gt;&lt;/span&gt;
+popCal(bday1)</pre>
+Birthday: <span id=bday1></span>&nbsp;
+<a href="javascript:popCal(bday1)">Change</a><br>
+<hr>
+Passing DATEFORMAT as a parameter
+<pre>popCal(this.form.date2,'DATEFORMAT=yyyy-mm-dd')</pre>
+<input type=text name=date2 value="1995-09-14">
+<input type=button value="..." onclick="popCal(this.form.date2,'DATEFORMAT=yyyy-mm-dd')">
+Refer to the usage manual for information on the supported formats.
+<hr>
+Parameters to change calendar size/headers!
+<pre>popCal(this.form.date3,'DATEFORMAT=mmmm yyyy;CELLSIZE=36;WEEKHEAD_SIZE=3')</pre>
+<input type=text name=date3 value="January 1967">
+<input type=button value="..." onclick="popCal(this.form.date3,'DATEFORMAT=mmmm yyyy;CELLSIZE=36;WEEKHEAD_SIZE=3')">
+<p><i>The following can be used as a guideline for sizes:</i>
+<input name=hfld type=hidden>
+<pre>
+<b>CELLSIZE  WEEKHEAD_SIZE  Example</b>
+32        2              <a href="javascript:popCal(frm1.hfld,'CELLSIZE=32;WEEKHEAD_SIZE=2')">View</a> (Small)
+36        3              <a href="javascript:popCal(frm1.hfld,'CELLSIZE=36;WEEKHEAD_SIZE=3')">View</a> (Medium)
+80        20             <a href="javascript:popCal(frm1.hfld,'CELLSIZE=80;WEEKHEAD_SIZE=20')">View</a> (Huge!)
+</pre>
+<hr>
+Changing the range of years shown in the Calendar
+<pre>popCal(null,'MINYEAR=2000;MAXYEAR=2010')</pre>
+<input type=text value="">
+<input type=button value="..." onclick="popCal(null,'MINYEAR=2000;MAXYEAR=2010')">
+<hr>
+Changing language on the fly! Want to see a French Calendar?
+<pre>popCal(null,'DATEFORMAT=www, dd.mm.yyyy;'+LANG_FRENCH);</pre>
+<input type=text value="">
+<input type=button value="..." onclick="popCal(null,'DATEFORMAT=www, dd.mm.yyyy;'+LANG_FRENCH)">
+</form>
+<p><hr>
+<small>Copyright &copy; 2004  Arun Narayanan</small>
+</div>
+</body>
+</html>

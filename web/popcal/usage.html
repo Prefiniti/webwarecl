@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>PopCal Usage</title>
+<style>
+body { background-color:#666666; margin:20px; font-family:Verdana,Arial; }
+.page { border:2px solid black; background-color:white; margin:0px; padding:20px; }
+.hilite { color: blue; }
+</style>
+</head>
+<body>
+<div class=page>
+<small>PopCal Ver 1.0 - The C-o-o-lest Pop Up Calendar!&nbsp;&nbsp;&nbsp;
+(http://jsutils.sourceforge.net/)</small>
+<hr>
+<h1>PopCal Usage</h1>
+<h2>Including popCal() in your page</h2>
+<h3>Step 1</h3>
+Include the following lines in your html code (preferably in the &lt;HEAD&gt; section).
+<pre>
+&lt;script src="js/popcal_config.js"&gt;&lt;/script&gt;
+&lt;script src="js/popcal_lang.js"&gt;&lt;/script&gt;
+&lt;script src="js/popcal.js"&gt;&lt;/script&gt;
+</pre>
+The second js file (popcal_lang.js) is required only if non-English calendars are required.
+<h3>Step 2</h3>
+Associate the function popCal(field,params) to an appropriate event.<p>
+For &lt;INPUT&gt; buttons it would be of the form:
+<pre>
+&lt;form name=frm1&gt;
+&lt;input type=text name=date1 value="April 9, 2003"&gt;
+&lt;input type=button value="..." onclick="<span class=hilite>popCal(date1)</span>"&gt;
+...
+</pre>
+For anchors/hyperlinks (&lt;A&gt;) it may be called as below:
+<pre>
+&lt;form name=frm1&gt;
+&lt;input type=text name=date1 value="April 9, 2003"&gt;
+&lt;A href="<span class=hilite>javascript:popCal(date1)</span>"&gt;Link or Image here&lt;/A&gt;
+...
+</pre>
+<h2>popCal() function Inputs</h2>
+popCal() takes two inputs, the date field element and a parameter string. Both fields are optional as explained below.<p>
+<h3>The <i>field</i> parameter</h3>
+The <i>field</i> parameter can be an input text form field. You can pass the actual object say frm1.date1 or the same within quotes "frm1.date1". The second is useful if you need to construct the argument from say, a variable. Eg.: popCal(frmname + ".date" + num)<p>
+If a non-form element such as &lt;DIV&gt;, &lt;SPAN&gt; etc. needs to hold the returned date info, pass the ID for the field name (as in the example below):
+<pre>
+Birthday: &lt;span id=<span class=hilite>bday1</span>&gt;&lt;/span&gt;&nbsp;
+&lt;a href="javascript:popCal(<span class=hilite>bday1</span>)"&gt;Change&lt;/a&gt;&lt;br&gt;
+</pre>
+If a <i>field</i> has not been specified or has been put as <span class=hilite>null</span>, then the preceeding input element is assumed to be the input date field. This can be very handy since mostly the link/button for changing the date would immediately follow the input text box.</p>
+<h3>The <i>params</i> string</h3>
+The <i>params</i> string is a very powerful means for setting any or all of the configurable parameters for the pop-up calendar. It is of the form:
+<pre>"KEY1=value1;KEY2=value2;KEY3=..."</pre>
+The value(s) MUST BE specified WITHOUT quotes (leading/trailing single or double quotes normally used to denote a string). If the value contains single or double quotes these might need to be escaped with a backslash (\' or \"). Semicolon (;) is used as the separator between parameters and hence should not be contained within the key-value pair.<p>
+<pre>
+popCal(this.form.date3,'DATEFORMAT=yyyy-mm-dd;CELLSIZE=36;WEEKHEAD_SIZE=3')
+</pre>
+Th params argument is optional. Default parameters as specified in the popcal_config.js file is assumed for any parameter not passed through the params argument of the popCal function. In other words, settings in the config files are applicable to all calendars but can be over-ridden using the params argument.<p>
+The following table gives a list of the supported parameters.
+<table cellpadding=4 border=1>
+<tr><th>KEY</th><th>Description</th></tr>
+
+<tr>
+<td valign=top>DATEFORMAT</td>
+<td valign=top>
+Format in which the date is displayed when the user chooses a date.
+<pre>
+<b>Param   Meaning                     Eg: For Sun, Jan 7, 2001</b>
+d       Day without zero            7
+dd      Day without zero            07
+m       Month without zero          1
+mm      Month with zero             01
+mmm     Three-letter month name     Jan
+mmmm    Full month name             January
+y       Year without zero           1
+yy      2-digit year format         01
+yyyy    4-digit year format         2001
+ww      Two-letter week name        Su
+www     Three-letter week name      Sun
+wwww    Full week name              Sunday
+
+<b>Note:</b> It is necessary to specify formats for at least
+      the month and year. Day & Week are not mandatory.
+</pre>
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>MINYEAR<br>MAXYEAR</td>
+<td valign=top>
+Minimum and Maximum Year. Range of years allowed for navigation and selection within the calendar.
+<pre>
+'MINYEAR=2000;MAXYEAR=2010'
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>Y2KYEAR</td>
+<td valign=top>
+The Y2KYEAR (Y2K = Year 2000) parameter is used when determining whether a two
+digit year belongs to the 19th or 20th century. A value of 30
+for example would take years from 00 to 29 as 2000 - 2029 and
+year values from 30 to 99 as 1930 to 1999.
+<pre>
+'Y2KYEAR=50'
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>CELLSIZE<br>WEEKHEAD_SIZE</td>
+<td valign=top>
+CELLSIZE gives the size of a cell in pixels. Increasing this would increase the calendar window size.<p>
+WEEKHEAD_SIZE specifies the size in characters of the Week Headings. For example in the calendar header Wednesday would appear as "We" if this parameter is 2 and "Wed" if it is 3. For showing the full name of the weekday (Wednesday), give a value bigger than the biggest weekday name say, 20.
+<pre>
+'CELLSIZE=36;WEEKHEAD_SIZE=3'
+
+<b>CELLSIZE  WEEKHEAD_SIZE     Remark</b>
+32        2                 Small size
+36        3                 Medium size
+80        20                Huge size
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>IMGDIR</td>
+<td valign=top>
+The parameter IMGDIR parameter sets the location of the path were the 
+calendar related images (the gif files found under the 'images' folder of the
+distribution zip. Specify the path with respect to the location of calling page
+(not the js file location).<p>
+Take care to end the path with a slash (/)<p>
+The best way is to specify a complete path (relative to the root folder or the full http path) in the config file itself so that this parameter need not be changed for each popCal() call.
+<pre>
+'IMGDIR=images/'
+'IMGDIR=/home/images/'
+'IMGDIR=http://someserver.com/home/images/'
+'IMGDIR='  (in case images are in the same directory
+            as the html file)
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>MONTHS<br>WEEKS</td>
+<td valign=top>
+MONTHS and WEEKS parameters can be used to specify week names in other languages or even in another case (I mean lower case, upper case etc.). The parameters are specified as a continuous comma (,) separated set of month or week names. All 12 months if specifying MONTHS and all 7 weekdays if specifying WEEKS should be given.
+<pre>
+'MONTHS=Janvier,Février,Mars,Avril,Mai,Ju...,Décembre'
+'WEEKS=Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi'
+</pre>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+Various Status Bar text parameters
+</td>
+<td valign=top>
+<pre>
+CALENDAR_TITLE      = Text displayed in the title bar
+TODAY_TEXT          = Text displayed on the TODAY button
+BLANK_TEXT          = Text displayed on the BLANK button
+PREV_YEAR_TEXT      = Previous Year (&lt;&lt;) status message
+PREV_MONTH_TEXT     = Previous Month (&lt;) status message
+NEXT_YEAR_TEXT      = Next Year (&gt;&gt;) status message
+NEXT_MONTH_TEXT     = Next Month (&gt;) status message
+SELECT_MONTH_TEXT   = Choose a Month status message
+SELECT_YEAR_TEXT    = Choose the Year status message
+GO_TO_TODAY_TEXT    = Go to Current Month status message
+SET_BLANK_DATE_TEXT = Enter a Blank Date status message
+CLOSE_CALENDAR_TEXT = Close this Window status message
+DEFAULT_STATUS_TEXT = Text displayed by default in ststus bar
+</pre>
+</td>
+</tr>
+
+</table>
+Please note that if the parameters are specified incorrectly, the Calendar might not function properly.
+<p><hr>
+<small>Copyright &copy; 2004  Arun Narayanan</small>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="crewManager.cfm" local="128295467281320000" remote="128295469200000000" testing="0" />
+<file name="editCrew.cfm" local="128295466862890000" remote="128295468600000000" testing="0" />
+<file name="addCrew.cfm" local="128295396200030000" remote="128295398400000000" testing="0" />
+<file name="addCrewSubmit.cfm" local="128295402118480000" remote="128295404400000000" testing="0" />
+<file name="addUserToCrewSubmit.cfm" local="128295458775450000" remote="128295460800000000" testing="0" />
+<file name="setCrewChief.cfm" local="128295463784290000" remote="128295465600000000" testing="0" />
+<file name="deleteFromCrew.cfm" local="128295465791080000" remote="128295468000000000" testing="0" />
+<file name="dispatchCrew.cfm" local="128305804430270000" remote="128305806600000000" testing="0" />
+<file name="dispatchCrewSubmit.cfm" local="128304742842340000" remote="128304744600000000" testing="0" />
+<file name="getSchedule.cfm" local="128306428649910000" remote="128306430600000000" testing="128306430600000000" />
+<file name="projectNumberByID.cfm" local="128304659802120000" remote="128304661800000000" testing="0" />
+<file name="projectAddressByID.cfm" local="128304666072920000" remote="128304667800000000" testing="0" />
+<file name="crewNameByID.cfm" local="128304765644140000" remote="128304767400000000" testing="0" />
+<file name="masterSchedule.cfm" local="128304903276500000" remote="128304905400000000" testing="0" />
+<file name="deconflict.cfm" local="128307322801270000" remote="128307324600000000" testing="128307324600000000" />
+<file name="scheduleByJob.cfm" local="128305606191100000" remote="128305608000000000" testing="0" />
+<file name="weeklySchedule.cfm" local="128306533962130000" remote="128306535600000000" testing="128306535600000000" />
+<file name="sumSchedule.cfm" local="128306508041010000" remote="128306509800000000" testing="128306509800000000" />
+</dwsync>

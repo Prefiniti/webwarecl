@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Application.cfm" local="128257408035781250" remote="128257410000000000" testing="128232067800000000" />
+<file name="timesheet.cfm" local="128302161411030000" remote="128302163400000000" testing="128274474000000000" />
+<file name="timesheetList.cfm" local="128242584341093750" remote="128242587000000000" testing="128232069600000000" />
+<file name="newts_sub.cfm" local="128302162966960000" remote="128302164600000000" testing="128233032000000000" />
+<file name="edit_ts.cfm" local="128302143222030000" remote="128302145400000000" testing="128273200800000000" />
+<file name="addEntry_sub.cfm" local="128302131141970000" remote="128302132800000000" testing="0" />
+<file name="taskCodes.cfm" local="128291652070762000" remote="128291654400000000" testing="128273197800000000" />
+<file name="addTask_sub.cfm" local="128245649800156250" remote="128245652400000000" testing="0" />
+<file name="taskCodeEdit.cfm" local="128291663550142000" remote="128291665800000000" testing="128273197800000000" />
+<file name="taskCodeDelete.cfm" local="128245655919531250" remote="128245658400000000" testing="0" />
+<file name="editTask_sub.cfm" local="128245971977500000" remote="128245974600000000" testing="0" />
+<file name="taskCodeInfo.cfm" local="128250672154375000" remote="128250674400000000" testing="0" />
+<file name="sign.cfm" local="128291654717842000" remote="128291656800000000" testing="128273197800000000" />
+<file name="editLineItem.cfm" local="128302149763160000" remote="128302151400000000" testing="128273197800000000" />
+<file name="sendReminders.cfm" local="128297995385130000" remote="128297997600000000" testing="0" />
+<file name="timecard.js" local="128302161673950000" remote="128302163400000000" testing="128266706400000000" />
+<file name="calendar.html" local="128221675320000000" remote="128256123000000000" testing="0" />
+<file name="calendar1.js" local="127700842680000000" remote="128256123000000000" testing="0" />
+<file name="calendar2.js" local="127700842820000000" remote="128256123000000000" testing="0" />
+<file name="calendar3.js" local="128179490180000000" remote="128256123000000000" testing="0" />
+<file name="selectDateRange.cfm" local="128256147188281250" remote="128256149400000000" testing="0" />
+<file name="listByUser.cfm" local="128302166819340000" remote="128302168800000000" testing="128267145000000000" />
+<file name="sign_sub.cfm" local="128257795775000000" remote="128257797600000000" testing="0" />
+<file name="editHeaderSub.cfm" local="128261635733437500" remote="128261637600000000" testing="0" />
+<file name="editLineItemSub.cfm" local="128302147983710000" remote="128302149600000000" testing="128266646400000000" />
+<file name="deleteLineItem.cfm" local="128277401981940000" remote="128277404400000000" testing="0" />
+</dwsync>
